@@ -28,6 +28,7 @@ win_data = pd.DataFrame({
 win_data["shading_weight"] = win_data["wins"] * 2 + win_data["runner_up"]
 
 app = dash.Dash()
+server = app.server
 
 app.layout = html.Div([
     html.H1("World Cup Tracker", style={"textAlign": "center", "margin-bottom": "10px"}),
@@ -142,5 +143,4 @@ def update_graph(radio, country, year):
 
 if __name__ == "__main__":
     app.run(debug=True)
-    server = app.server
         
