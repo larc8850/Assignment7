@@ -1,0 +1,3 @@
+Dash==2.18.2
+pandas
+gunicorn
